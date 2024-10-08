@@ -1,5 +1,5 @@
 
-function DateFns() {
+function UseEnv() {
   if (process.env.NODE_ENV === 'production') {
     throw new Error('This is a production error');
   }
@@ -9,4 +9,4 @@ function DateFns() {
   );
 }
 
-export default DateFns;
+export default UseEnv;
